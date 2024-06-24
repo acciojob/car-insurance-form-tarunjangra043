@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <form action="#" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label>Gender</label>
+            <input type="radio" id="gender_male" name="gender" value="male" required>
+            <label for="gender_male">Male</label>
+            <input type="radio" id="gender_female" name="gender" value="female" required>
+            <label for="gender_female">Female</label>
+            <input type="radio" id="gender_other" name="gender" value="other" required>
+            <label for="gender_other">Other</label>
+        </div>
+        <div>
+            <label for="cars">Car Brands</label>
+            <select id="cars" name="cars">
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
+        </div>
+        <div>
+            <label for="carage">Car Age</label>
+            <input type="number" id="carage" name="carage" required>
+        </div>
+        <div>
+            <label for="dop">Date of Purchase</label>
+            <input type="date" id="dop" name="dop" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
